@@ -42,6 +42,12 @@ mongoose
   .then(() => console.log("✅ Connected to MongoDB Atlas"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
+
+app.get("/getTest",(req,res)=>{
+  res.send("<h1>Jay ganesh</h1><br><h2>Shri swami samartha</h2><br><h2>Jay shankar baba</h2>");
+});
+
+
 // GET all records
 app.get("/api/data", async (req, res) => {
   try {
